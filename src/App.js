@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from './logo.svg'
+import 'antd/dist/antd.css'
+import './App.css'
+import USFundingVisual from './components/USFundingVisual'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="header">
+        <h1>Embedded Analytics with Tableau and React</h1>
+      </div>
+      <div className="container">
+        <div className="sidebar">
+          <ul>
+            <li>
+              <button className="navbutton">US Funding</button>
+            </li>
+          </ul>
+        </div>
+        <div className="content">
+          <div className="vizContainer">
+            <USFundingVisual />
+          </div>
+        </div>
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
