@@ -92,7 +92,9 @@
   padding: 10px;
 }
 .navbutton {
-  width: 200px;
+  display: flex;
+  justify-content: center;
+  min-width: 200px;
   padding: 10px 20px;
   border-radius: 5px;
   border: none;
